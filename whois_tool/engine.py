@@ -60,7 +60,7 @@ class WhoisEngine:
         # Didn't find it in cache, need to do the lookup
         logger.debug(f"Cache miss for {ip}, looking it up")
         
-        # Get the right resolver(s) for the job
+        # Get the right resolver(s)
         resolvers = get_resolver_by_method(self.lookup_method, rate_limit=self.rate_limit)
         if not isinstance(resolvers, list):
             resolvers = [resolvers]  # Make sure we have a list to iterate
@@ -69,8 +69,7 @@ class WhoisEngine:
         results = []
         errors = []
         
-        # Try our resolvers until we get a hit
-        # (or until we've tried them all in auto mode)
+        # Try resolvers until we get a hit
         for resolver in resolvers:
             try:
                 # The actual lookup happens here
@@ -87,14 +86,14 @@ class WhoisEngine:
                 errors.append(str(e))
                 logger.warning(f"{resolver.name} failed on {ip}: {e}")
                 
-                # In non-auto mode, propagate the error
+                # In non-auto mode, show the error
                 if self.lookup_method != 'auto':
                     # Add some context to the error
                     raise ValueError(f"Lookup with {resolver.name} failed: {e}")
         
-        # If we got no results, that's a problem
         if not results:
             # We tried everything and nothing worked
+            # AKA f.t.s.i.o.
             err = '; '.join(errors)
             logger.error(f"No joy for {ip} - all methods failed: {err}")
             raise ValueError(f"All lookup methods failed for {ip}")

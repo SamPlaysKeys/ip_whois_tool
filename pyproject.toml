@@ -8,7 +8,7 @@ dynamic = ["version"]
 description = "A tool for looking up WHOIS information for IP addresses"
 readme = "README.md"
 authors = [
-    {name = "IP WHOIS Tool Contributors", email = "your.email@example.com"}
+    {name = "SamPlaysKeys", email = "Sam@SamPlaysKeys.com"}
 ]
 license = {text = "MIT"}
 requires-python = ">=3.8"
@@ -41,10 +41,10 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/yourusername/ip_whois_tool"
-"Bug Tracker" = "https://github.com/yourusername/ip_whois_tool/issues"
-"Source Code" = "https://github.com/yourusername/ip_whois_tool"
-"Documentation" = "https://github.com/yourusername/ip_whois_tool#readme"
+"Homepage" = "https://github.com/samplayskeys/ip_whois_tool"
+"Bug Tracker" = "https://github.com/samplayskeys/ip_whois_tool/issues"
+"Source Code" = "https://github.com/samplayskeys/ip_whois_tool"
+"Documentation" = "https://github.com/samplayskeys/ip_whois_tool#readme"
 
 [project.scripts]
 ip-whois = "whois_tool.cli:main"
