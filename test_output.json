@@ -1,0 +1,22 @@
+[
+  {
+    "ip": "8.8.8.8",
+    "network": "8.8.8.0/24",
+    "asn": "15169",
+    "organization": "Google LLC (GOGL)",
+    "country": "US",
+    "city": null,
+    "registered": "2000-03-30 00:00:00",
+    "source": "IPWhoisResolver, SystemWhoisResolver"
+  },
+  {
+    "ip": "1.1.1.1",
+    "network": "1.1.1.0/24",
+    "asn": "13335",
+    "organization": "One Registry",
+    "country": "AU",
+    "city": null,
+    "registered": null,
+    "source": "IPWhoisResolver, PythonWhoisResolver, SystemWhoisResolver"
+  }
+]

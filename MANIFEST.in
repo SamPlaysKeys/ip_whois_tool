@@ -1,0 +1,27 @@
+# Include README and license
+include README.md
+include LICENSE
+include CHANGELOG.md
+include requirements.txt
+include requirements-dev.txt
+include .pre-commit-config.yaml
+include example_ips.txt
+
+# Include data directories
+include whois_tool/data/cache/.gitkeep
+include whois_tool/data/logs/.gitkeep
+
+# Exclude development files
+exclude .gitignore
+exclude .git
+exclude .pytest_cache
+exclude .mypy_cache
+exclude __pycache__
+recursive-exclude tests *
+recursive-exclude docs *
+recursive-exclude build *
+recursive-exclude dist *
+recursive-exclude *.egg-info *
+recursive-exclude .venv *
+recursive-exclude venv *
+

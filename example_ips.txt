@@ -1,0 +1,50 @@
+# IP WHOIS Lookup Tool - Example IP Addresses
+# This file contains well-known IP addresses you can use to test the tool.
+# Usage: ip-whois -f example_ips.txt
+
+# Google Public DNS servers
+# These are popular public DNS resolvers operated by Google
+8.8.8.8
+8.8.4.4
+
+# Cloudflare DNS servers
+# Privacy-focused DNS resolvers operated by Cloudflare
+1.1.1.1
+1.0.0.1
+
+# OpenDNS servers
+# DNS resolvers with security features operated by Cisco
+208.67.222.222
+208.67.220.220
+
+# Quad9 DNS server
+# Security-focused DNS resolver that blocks malicious domains
+9.9.9.9
+
+# Example IP addresses from major technology companies
+13.32.99.34    # Amazon AWS CloudFront
+104.244.42.65  # Twitter
+157.240.3.35   # Facebook
+142.250.72.110 # Google
+40.126.35.80   # Microsoft Azure
+
+# Example IP addresses from different global regions
+185.70.40.1    # Europe (UK)
+219.100.37.1   # Asia (Japan)
+200.26.168.1   # South America (Colombia)
+41.231.21.1    # Africa (Tunisia)
+1.129.25.42    # Oceania (Australia)
+
+# Examples: How to run this file
+# Using the installed command:
+# ip-whois -f example_ips.txt
+# ip-lookup -f example_ips.txt    # Alternative command name
+# 
+# To save the results to a CSV file:
+# ip-whois -f example_ips.txt -o results.csv
+#
+# To use a specific lookup method:
+# ip-whois -f example_ips.txt --lookup-method ipwhois
+#
+# To run directly from the repo without installation:
+# ./ip_lookup.py -f example_ips.txt
