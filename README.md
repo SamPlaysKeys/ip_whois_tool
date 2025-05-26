@@ -1,14 +1,11 @@
 # IP WHOIS Lookup Tool
 
-A Python command-line tool for looking up WHOIS information for IP addresses using multiple sources and methods. This tool helps network administrators, security professionals, and researchers gather information about IP addresses quickly and efficiently.
+A Python command-line tool for looking up WHOIS information for IP addresses using multiple sources and methods. This tool helps network administrators, security professionals, and researchers gather information about IP addresses quickly and efficiently. Output is generated in multiple methods to meet different use cases.
 
 ## Quick Start
 
 ```bash
-# Install from PyPI
-pip install ip-whois-tool
-
-# Or install from source
+# Install from source
 git clone https://github.com/yourusername/ip_whois_tool.git
 cd ip_whois_tool
 pip install -e .
@@ -18,7 +15,7 @@ ip-whois -i 8.8.8.8
 ip-lookup -i 8.8.8.8
 ```
 
-After installation, you can use either the `ip-whois` or `ip-lookup` command - they're aliases for the same functionality.
+After installation, you can use either the `ip-whois` or `ip-lookup` command. Both are aliases for the same functionality.
 
 ## Features
 
@@ -41,7 +38,7 @@ After installation, you can use either the `ip-whois` or `ip-lookup` command - t
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ip_whois_tool.git
+git clone https://github.com/SamPlaysKeys/ip_whois_tool.git
 cd ip_whois_tool
 
 # Create a virtual environment
@@ -228,7 +225,6 @@ Contributions are welcome! Here's how you can contribute:
 This project uses:
 - Black for code formatting
 - Ruff for linting
-- Pre-commit hooks to enforce quality
 
 ## License
 
